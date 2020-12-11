@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS -- Number guessing</title>
+</head>
+<body>
+	<script>
+		var num;
+		num=window.prompt("Please enter a number between 1-10")
+		var rand=myFunction();
+		if(num!=rand){
+			while(num!=rand){
+			num=window.prompt("Please enter another number between 1-10");
+			}
+		}else{
+			document.writeln("You got it right!!");
+		}
+		document.writeln("You got it right!!")
+
+		function myFunction(){
+			return Math.floor(Math.random()*10+1);
+		} 
+
+	</script>
+
+</body>
+</html>
